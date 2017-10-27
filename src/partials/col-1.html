@@ -1,4 +1,4 @@
-<div class="grid-x grid-margin-x">
+<div class="grid-x grid-padding-x">
 
     <div class="cell medium-4">
 
@@ -6,10 +6,13 @@
         {{> article_heading_copy }}
         {{> article_heading_list }}
         {{> article_heading_image_copy }}
+        {{> article_heading_copy_list }}
+        {{> article_heading_copy }}
+        {{> article_heading_list }}
 
     </div>
 
-    <div class="cell medium-8">
+    <div class="cell medium-8" style="border-left:1px solid #ccc;border-right:1px solid #ccc;">
 
         {{> article_video }} 
 
@@ -17,7 +20,29 @@
 
         {{> article_media-objects_form }}
 
-        {{> article_image_heading_copy }} 
+        {{> article_image_heading_copy }}
 
+        {{> article_media-object_copy }}
+
+        <div class="callout text-center">
+            <h3>This is a callout.</h3>
+            <p>It has an easy to override visual style</p>
+            <a href="#" class="button">Take this.</a>
+        </div>
+
+    </div>
+</div>
+
+<hr>
+
+<div class="grid-x grid-padding-x">
+    <div class="cell medium-4">
+        {{> article_heading_copy }}
+    </div>
+    <div class="cell medium-4">
+        {{> article_heading_copy }}
+    </div>
+    <div class="cell medium-4">
+        {{> article_heading_copy }}
     </div>
 </div>
